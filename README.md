@@ -12,24 +12,15 @@
 - 支持开机自启开关，默认关闭
 - 本地保存提醒设置，不需要登录或联网
 
-## 下载使用
+## 下载
 
-在 GitHub Release 中下载便携版：
+前往 [Releases](https://github.com/potatoniniViber/tuncan-reminder/releases/latest) 下载最新版：
 
-- `豚餐-便携版-0.1.0.exe`
-- `SHA256SUMS.txt`
+- `tuncan-reminder.exe`：无需安装，下载后直接运行。
+- `SHA256SUMS.txt`：用于校验下载文件完整性。
 
 下载后可直接运行便携版 exe。首次运行时，如果 Windows 安全提示未知发布者，请确认文件来源为本仓库 Release 后再继续。
 
-## 校验文件
-
-可在 PowerShell 中校验下载文件：
-
-```powershell
-Get-FileHash ".\豚餐-便携版-0.1.0.exe" -Algorithm SHA256
-```
-
-将输出的哈希值与 `SHA256SUMS.txt` 中记录的值对比，一致则说明文件完整。
 
 ## 本地开发
 
