@@ -1,0 +1,56 @@
+# 豚餐
+
+豚餐是一个 Windows 桌面外卖提醒应用。用户可以设置多个每日提醒时间，比如午餐、下午茶、晚餐；到点后应用会弹出水豚主题视频提醒，点击“已点”即可关闭弹窗。
+
+## 功能
+
+- 支持新增、编辑、暂停和删除多个餐点提醒
+- 提醒每天重复，错过时间不会补弹
+- 弹窗播放本地视频，保持原比例，不放大、不全屏
+- 主窗口关闭后托盘常驻
+- 支持开机自启开关，默认关闭
+- 本地保存提醒设置，不需要登录或联网
+
+## 下载使用
+
+在 GitHub Release 中下载便携版：
+
+- `豚餐-便携版-0.1.0.exe`
+- `SHA256SUMS.txt`
+
+下载后可直接运行便携版 exe。首次运行时，如果 Windows 安全提示未知发布者，请确认文件来源为本仓库 Release 后再继续。
+
+## 校验文件
+
+可在 PowerShell 中校验下载文件：
+
+```powershell
+Get-FileHash ".\豚餐-便携版-0.1.0.exe" -Algorithm SHA256
+```
+
+将输出的哈希值与 `SHA256SUMS.txt` 中记录的值对比，一致则说明文件完整。
+
+## 本地开发
+
+```powershell
+npm install
+npm test
+npm start
+```
+
+构建 Windows 安装包和便携版：
+
+```powershell
+npm run dist
+```
+
+## 技术栈
+
+- Electron
+- 原生 HTML / CSS / JavaScript
+- Node.js `node:test`
+- electron-builder
+
+## License
+
+MIT
